@@ -1,0 +1,72 @@
+
+.Contactt{
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 14px;
+    margin: 20px;
+}
+.para{
+    font-size: 30px;
+    padding: 23px;
+    margin: 2px;
+}
+.button{
+    
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px;
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 257px;
+    margin: 3px;
+    border-radius: 5px;
+}
+.buttun{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px;
+    background-color: white;
+    color: black;
+    width: 530px;
+    margin: 3px;
+    height: 60px;
+    border-radius: 5px;
+}
+/* .imgee{
+    height: 101%;
+    width: 103%;
+} */
+.ickn{
+    font-size: 26px;
+    margin: 5px;
+}
+/* for input coding */
+.lbl{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.lbl .txt{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px;
+    background-color: white;
+    color: black;
+    width: 530px;
+    margin: 3px;
+    height: 60px;
+    border-radius: 5px;
+}
+.lbl label{
+    position: absolute;
+    top: 11px;
+    left: 26px;
+    background: white;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* for input coding */
