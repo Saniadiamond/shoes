@@ -1,28 +1,33 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './Layout'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import Register from './Pages/Register'
 import About from './Pages/About'
 import Menu from './Pages/Menu'
+import Footer from './Pages/Footer'
+import Home from './Pages/Home'
+
+export const ThemeContext = createContext()
 
 function App() {
+  const [theme, setTheme] = useState('light')
+
   return (
-    <div>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <BrowserRouter>
-      <Layout/>
-      <Routes>
-         <Route path='/'element={<Home/>} />
-         <Route path='/Pages/Register'element={<Register/>} />
-         <Route path='/Pages/About'element={<About/>} />
-         
-         <Route path='/Pages/Contact'element={<Contact/>} /> 
-         <Route path='/Pages/Menu'element={<Menu/>} /> 
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="register" element={<Register />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="menu" element={<Menu />} />
+          </Route>
+        </Routes>
+        <Footer />
       </BrowserRouter>
-      
-    </div>
+    </ThemeContext.Provider>
   )
 }
 

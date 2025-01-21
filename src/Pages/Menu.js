@@ -67,9 +67,9 @@ function Menu() {
       </div>
 
       <div className="menu-content">
-        <div className="header">
-          <h1>Jordan Products (1227)</h1>
-          <div className="header-controls">
+        <div className="Mheader">
+          <h1>Our Products (1227)</h1>
+          <div className="Mheader-controls">
             <button 
               className="filter-btn"
               onClick={() => setShowFilters(!showFilters)}
@@ -149,7 +149,7 @@ function Menu() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <img src="./Image/green-shoe.jpg" alt="Tatum 3" />
+              <img src="/Image/1 shoe.png" alt="Tatum 3" />
               <div className="product-info">
                 <span className="tag">Just In</span>
                 <h3>Tatum 3</h3>
@@ -162,7 +162,7 @@ function Menu() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <img src="./Image/black-shoe1.jpg" alt="Air Jordan 3 Retro Black Cat" />
+              <img src="/Image/2 shoe.png" alt="Air Jordan 3 Retro Black Cat" />
               <div className="product-info">
                 <span className="tag">Just In</span>
                 <h3>Air Jordan 3 Retro "Black Cat"</h3>
@@ -175,7 +175,7 @@ function Menu() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <img src="./Image/black-shoe2.jpg" alt="Jordan 3 Retro Black Cat" />
+              <img src="/Image/3 shoe.png" alt="Jordan 3 Retro Black Cat" />
               <div className="product-info">
                 <span className="tag">Just In</span>
                 <h3>Jordan 3 Retro "Black Cat"</h3>

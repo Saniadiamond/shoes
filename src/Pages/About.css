@@ -1,0 +1,425 @@
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.help-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.help-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.search-box {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #757575;
+}
+
+.sign-in-section {
+  text-align: center;
+  margin: 40px 0;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+.sign-in-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.sign-in-btn {
+  background-color: #111;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.join-link {
+  color: #111;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.quick-assists {
+  margin-bottom: 40px;
+}
+
+.quick-assists h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.quick-assists p {
+  color: #757575;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.category-card {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #111;
+  cursor: pointer;
+}
+
+.category-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.category-items a {
+  color: #757575;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.category-items a:hover {
+  color: #111;
+}
+
+.view-all-btn {
+  background: none;
+  border: none;
+  color: #111;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+.contact-section {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #111;
+  position: relative;
+}
+
+.contact-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #111;
+  border-radius: 2px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e5e5;
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+
+.icon-container svg {
+  width: 32px;
+  height: 32px;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .icon-container {
+  background: #111;
+}
+
+.contact-card:hover .icon-container svg {
+  color: white;
+}
+
+.contact-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.contact-card p {
+  color: #757575;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.phone-number {
+  font-size: 20px !important;
+  font-weight: 500;
+  color: #111 !important;
+  margin: 15px 0;
+}
+
+.contact-btn {
+  background-color: #111;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark .help-container {
+  background-color: #111;
+  color: white;
+}
+
+.dark .help-header h1,
+.dark .sign-in-section h2,
+.dark .quick-assists h3,
+.dark .category-card h3,
+.dark .contact-section h3 {
+  color: white;
+}
+
+.dark .search-box input {
+  background-color: #222;
+  border-color: #333;
+  color: white;
+}
+
+.dark .search-box input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark .sign-in-section {
+  background-color: #222;
+}
+
+.dark .category-card {
+  background-color: #222;
+  border-color: #333;
+}
+
+.dark .category-items a {
+  color: #999;
+}
+
+.dark .category-items a:hover {
+  color: white;
+}
+
+.dark .view-all-btn {
+  color: white;
+}
+
+.dark .sign-in-btn,
+.dark .contact-btn {
+  background-color: white;
+  color: #111;
+}
+
+.dark .contact-section {
+  background-color: #222;
+}
+
+.dark .contact-card {
+  background-color: #333;
+  border-color: #444;
+}
+
+.dark .icon-container {
+  background-color: #333;
+}
+
+.dark .icon-container svg {
+  color: white;
+}
+
+.dark .contact-card:hover .icon-container {
+  background-color: white;
+}
+
+.dark .contact-card:hover .icon-container svg {
+  color: #111;
+}
+
+.dark .contact-card h3,
+.dark .phone-number {
+  color: white !important;
+}
+
+.dark .contact-card p {
+  color: #999;
+}
+
+.dark .contact-btn {
+  background-color: white;
+  color: #111;
+}
+
+.dark .contact-section h2 {
+  color: white;
+}
+
+.dark .contact-section h2::after {
+  background: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .help-container {
+    padding: 20px;
+  }
+
+  .help-header h1 {
+    font-size: 28px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box input {
+    font-size: 14px;
+  }
+
+  .sign-in-section h2 {
+    font-size: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+  }
+
+  .icon-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-container svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-card h3 {
+    font-size: 20px;
+  }
+
+  .phone-number {
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,416 @@
+.register-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.jordan-nav {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: white;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.jordan-logo {
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover .jordan-logo {
+    transform: scale(1.1);
+}
+
+.jordan-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.jordan-nav li {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #111;
+    transition: color 0.3s ease;
+}
+
+.jordan-nav li:hover {
+    color: #757575;
+}
+
+.hero-section {
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.left-content, .right-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.group-image, .shoe-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.shoe-image:hover {
+    transform: scale(1.05) rotate(2deg);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #111;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #111, transparent);
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards 0.5s;
+}
+
+.text-content h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #111;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #111, transparent);
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards 0.8s;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-buttons button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-buttons button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease-out;
+}
+
+.cta-buttons button:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.shop-btn {
+    background-color: #111;
+    color: white;
+}
+
+.shop-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.shop-btn:active {
+    transform: translateY(1px);
+}
+
+.explore-btn {
+    background-color: transparent;
+    border: 2px solid #111 !important;
+    color: #111;
+}
+
+.explore-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.explore-btn:active {
+    transform: translateY(1px);
+}
+
+.trending-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+
+.trending-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #111, transparent, #111);
+    animation: gradientFlow 3s linear infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.trending-section h3 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #111;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trending-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation: expandLine 1s forwards 1s;
+}
+
+@keyframes expandLine {
+    to {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trending-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.trending-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.trending-card:hover::before {
+    transform: translateX(100%);
+}
+
+.trending-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.trending-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.trending-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+/* Dark mode styles */
+.dark .register-container {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.dark .jordan-nav {
+    background-color: #1a1a1a;
+    border-color: #333;
+}
+
+.dark .jordan-nav li {
+    color: #fff;
+}
+
+.dark .jordan-nav li:hover {
+    color: #999;
+}
+
+.dark .jordan-logo {
+    color: white;
+}
+
+.dark .text-content h1,
+.dark .text-content h2,
+.dark .trending-section h3 {
+    color: #fff;
+}
+
+.dark .text-content p {
+    color: #999;
+}
+
+.dark .trending-section {
+    background-color: #222;
+}
+
+.dark .trending-card {
+    background-color: #333;
+}
+
+.dark .shop-btn {
+    background-color: #fff;
+    color: #111;
+}
+
+.dark .explore-btn {
+    border-color: #fff !important;
+    color: #fff;
+}
+
+.dark .text-content h1::after {
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+.dark .text-content h2::after {
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+}
+
+.dark .trending-section::before {
+    background: linear-gradient(90deg, #fff, transparent, #fff);
+}
+
+.dark .trending-section h3::after {
+    background: #fff;
+}
+
+.dark .trending-card::before {
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .jordan-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .text-content h1 {
+        font-size: 36px;
+    }
+    
+    .text-content h2 {
+        font-size: 48px;
+    }
+    
+    .trending-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
