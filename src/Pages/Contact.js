@@ -2,52 +2,135 @@ import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
-
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
     <div>
-      
-        <div className="container-fluid">
+      <div className="container-fluid">
         <div className="container">
           <div className="row">
-          <h1 className='Contactt'>CONTACT US</h1>
-          <p className='para'>
-            LET'S CONTACT :WE'RE HERE TO HELP,WE'D LOVE TO HERE FROM YOU WHEATHER YOU HAVE A COMMENT,QUESTION JUST WANT TO CHAT ,YOUCAN REACH OUT TO USTHROUGH THE CONTACT FORM OF THIS PAGE,OR BY PHONE,OR SOCIAL MEDIA.
-          </p>
+            <motion.h1 
+              className='Contactt'
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              CONTACT US
+            </motion.h1>
+            <motion.p 
+              className='para'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              LET'S CONTACT :WE'RE HERE TO HELP,WE'D LOVE TO HERE FROM YOU WHEATHER YOU HAVE A COMMENT,QUESTION JUST WANT TO CHAT ,YOUCAN REACH OUT TO USTHROUGH THE CONTACT FORM OF THIS PAGE,OR BY PHONE,OR SOCIAL MEDIA.
+            </motion.p>
           </div>
           <div className="row">
             <div className="col"></div>
-            <div className="col-5">
-              <button className='button'> <MdOutlineMessage className='ickn'/>VIA SUPPORT CHAT</button>
-              <button className='button'> <FaPhoneAlt className='ickn'/>VIA CALL</button><br />
-              <button className='buttun' > <MdEmail className='ickn'/>VIA EMAIL FORM</button>
+            <motion.div 
+              className="col-5"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              <motion.button 
+                className='button'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <MdOutlineMessage className='ickn'/>VIA SUPPORT CHAT
+              </motion.button>
+              <motion.button 
+                className='button'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <FaPhoneAlt className='ickn'/>VIA CALL
+              </motion.button>
+              <br />
+              <motion.button 
+                className='buttun'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <MdEmail className='ickn'/>VIA EMAIL FORM
+              </motion.button>
               
-              <form action=""className='lbl'>
+              <motion.form 
+                action=""
+                className='lbl'
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7, duration: 0.5 }}
+              >
                 <div>
-                  <label htmlFor="name" >Name</label> <br />
-                  <input type="text" name='name'className='txt'/> <br />
-                  </div>
-              </form>
-              <form action=""className='lbl'>
+                  <label htmlFor="name">Name</label> <br />
+                  <motion.input 
+                    whileFocus={{ scale: 1.02 }}
+                    type="text" 
+                    name='name'
+                    className='txt'
+                  /> <br />
+                </div>
+              </motion.form>
+              <motion.form 
+                action=""
+                className='lbl'
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8, duration: 0.5 }}
+              >
                 <div>
-                  <label htmlFor="name" >Email</label> <br />
-                  <input type="text" name='name'className='txt'/> <br />
-                  </div>
-              </form>
-              <form action=""className='lbl'>
+                  <label htmlFor="name">Email</label> <br />
+                  <motion.input 
+                    whileFocus={{ scale: 1.02 }}
+                    type="text" 
+                    name='name'
+                    className='txt'
+                  /> <br />
+                </div>
+              </motion.form>
+              <motion.form 
+                action=""
+                className='lbl'
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 0.5 }}
+              >
                 <div>
-                  <label htmlFor="name" >Text</label> <br />
-                  <textarea name="" id=""className='txt' style={{height:'100px'}}></textarea> <br />
-                  </div>
-              </form>
+                  <label htmlFor="name">Text</label> <br />
+                  <motion.textarea 
+                    whileFocus={{ scale: 1.02 }}
+                    name="" 
+                    id=""
+                    className='txt' 
+                    style={{height:'100px'}}
+                  ></motion.textarea> <br />
+                </div>
+              </motion.form>
               
-              <button className='button'style={{marginLeft:'258px'}}>SUBMIT</button>
-
-            </div>
-            <div className="col-6">
+              <motion.button 
+                className='button'
+                style={{marginLeft:'258px'}}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1, duration: 0.5 }}
+              >
+                SUBMIT
+              </motion.button>
+            </motion.div>
+            <motion.div 
+              className="col-6"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
               <img src="./Image/serve.jpeg" alt="" className='imgee' />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

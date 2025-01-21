@@ -1,4 +1,3 @@
-
 .dark{
     color: white;
     background-color: black;
@@ -14,7 +13,16 @@
 .logoo{
     height: 80px;
     margin: 8px;
+    width: 80px !important;
+    height: 80px !important;
 }
+
+.dark .logoo {
+    filter: brightness(0) invert(1);
+    color: white !important;
+    transition: filter 0.3s ease;
+}
+
 .profile{
    padding: 6px;
 }
@@ -76,4 +84,115 @@
     height: 51px;
     padding: 6px;
     background: transparent;
+}
+
+.app.dark {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.app.light {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.dark .anker {
+    color: #ffffff;
+}
+
+.dark .btnn.btnlogin {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+
+.dark .btnn.btnlogin:hover {
+    background-color: #666666;
+}
+
+.dark .container.main {
+    background-color: #2d2d2d;
+}
+
+/* Contact page dark mode styles */
+.dark .Contactt {
+    color: #ffffff;
+}
+
+.dark .para {
+    color: #e0e0e0;
+}
+
+.dark .button {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #404040;
+}
+
+.dark .button:hover {
+    background-color: #404040;
+}
+
+.dark .buttun {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #404040;
+}
+
+.dark .buttun:hover {
+    background-color: #404040;
+}
+
+.dark .ickn {
+    color: #ffffff;
+}
+
+.dark .lbl {
+    color: #ffffff;
+}
+
+.dark .txt {
+    background-color: #333333 !important;
+    color: #ffffff;
+    border: 1px solid #404040;
+}
+
+.dark .txt:focus {
+    background-color: #444444 !important;
+    border-color: #505050;
+    outline: none;
+}
+
+.dark input[type="text"],
+.dark textarea {
+    background-color: #333333 !important;
+}
+
+.dark input[type="text"],
+.dark textarea,
+.dark label {
+    color: #ffffff !important;
+}
+
+.dark label {
+    color: #ffffff !important;
+    background-color: black !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.dark .imgee {
+    opacity: 0.9;
+    border: 1px solid #404040;
+}
+
+.swoosh-svg {
+    transition: all 0.3s ease;
+}
+
+.dark .swoosh-svg {
+    color: white !important;
+    fill: white !important;
 }

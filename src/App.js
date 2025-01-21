@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import Register from './Pages/Register'
 import About from './Pages/About'
+import Menu from './Pages/Menu'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
          <Route path='/Pages/About'element={<About/>} />
          
          <Route path='/Pages/Contact'element={<Contact/>} /> 
+         <Route path='/Pages/Menu'element={<Menu/>} /> 
       </Routes>
       </BrowserRouter>
       
